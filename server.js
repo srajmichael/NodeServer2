@@ -47,6 +47,12 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects'
+  });
+});
+
 
 app.get('/derp/morederp',(req,res)=>{
   res.send('<h1>DERP DERP</h1>');
